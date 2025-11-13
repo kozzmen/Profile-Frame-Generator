@@ -32,3 +32,4 @@ Initially built as a profile frame generator for <a href="https://sofia.wordcamp
 ## 🔧 Usage
 
 Admins upload frames, users upload photos, position them interactively, and download their custom framed profile picture.
+Having problem with your profile frame? Feel free to <a href="https://velev.dev/contacts">contact me</a> so I can look into the issue.
