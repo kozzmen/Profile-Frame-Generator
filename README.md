@@ -1,6 +1,7 @@
 # Profile Frame Generator for WordPress
 
 A complete WordPress plugin that enables admins to upload decorative PNG frames and allows front-end users to create custom framed profile pictures through an interactive editor.
+Initially built as a profile frame generator for <a href="https://sofia.wordcamp.org/2025/">WordCamp Sofia 2025</a>, I decided to open-source it for general use.
 
 ## 🎯 Features
 
