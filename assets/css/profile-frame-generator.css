@@ -1,0 +1,324 @@
+/* Profile Frame Generator Styles */
+
+/* Container */
+.pfg-generator-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pfg-instructions {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pfg-instructions h3 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+}
+
+.pfg-instructions p {
+    color: #666;
+    margin: 0;
+}
+
+/* Upload Area */
+.pfg-upload-area {
+    text-align: center;
+    padding: 3rem 1rem;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    background: white;
+}
+
+/* Editor Area */
+.pfg-editor-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pfg-canvas-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+#pfg-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: move;
+    touch-action: none;
+}
+
+#pfg-frame-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* Controls */
+.pfg-controls {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.pfg-control-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.pfg-control-group label {
+    font-weight: 600;
+    color: #333;
+    min-width: 50px;
+}
+
+#pfg-zoom {
+    flex: 1;
+    height: 8px;
+    border-radius: 4px;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #ddd;
+}
+
+#pfg-zoom::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #0073aa;
+    cursor: pointer;
+}
+
+#pfg-zoom::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #0073aa;
+    cursor: pointer;
+    border: none;
+}
+
+#pfg-zoom-value {
+    font-weight: 600;
+    color: #0073aa;
+    min-width: 50px;
+    text-align: right;
+}
+
+.pfg-help-text {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0 0;
+}
+
+/* Actions */
+.pfg-actions,
+.pfg-download-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Result Area */
+.pfg-result-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pfg-preview-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+#pfg-result-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Buttons */
+.pfg-button {
+    padding: 10px 20px 20px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 48px;
+    min-width: 120px;
+}
+
+.pfg-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pfg-button:active {
+    transform: translateY(0);
+}
+
+.pfg-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.pfg-button-primary {
+    background: #0073aa;
+    color: white;
+}
+
+.pfg-button-primary:hover {
+    background: #005a87;
+}
+
+.pfg-button-success {
+    background: #46b450;
+    color: white;
+}
+
+.pfg-button-success:hover {
+    background: #3a9b42;
+}
+
+.pfg-button-secondary {
+    background: #f0f0f1;
+    color: #2c3338;
+    border: 1px solid #c3c4c7;
+}
+
+.pfg-button-secondary:hover {
+    background: #e0e0e1;
+}
+
+.pfg-button-tertiary {
+    background: transparent;
+    color: #2c3338;
+    border: 1px solid #c3c4c7;
+}
+
+.pfg-button-tertiary:hover {
+    background: #f0f0f1;
+}
+
+/* Messages */
+.pfg-message {
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.pfg-message-success {
+    background: #d7f0db;
+    color: #2d5d31;
+    border: 1px solid #46b450;
+}
+
+.pfg-message-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #dc3545;
+}
+
+/* Admin Styles */
+.pfg-admin-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.pfg-upload-section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.pfg-frames-list table {
+    margin-top: 1rem;
+}
+
+.pfg-copy-shortcode {
+    margin-left: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pfg-generator-container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    .pfg-canvas-wrapper,
+    .pfg-preview-wrapper {
+        max-width: 100%;
+    }
+    
+    .pfg-control-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .pfg-control-group label {
+        min-width: auto;
+    }
+    
+    #pfg-zoom-value {
+        text-align: left;
+    }
+    
+    .pfg-actions,
+    .pfg-download-actions {
+        flex-direction: column;
+    }
+    
+    .pfg-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pfg-instructions h3 {
+        font-size: 1.25rem;
+    }
+    
+    .pfg-instructions p {
+        font-size: 0.9rem;
+    }
+    
+    .pfg-button {
+        padding: 10px 20px 20px 20px;
+        font-size: 0.95rem;
+    }
+}
